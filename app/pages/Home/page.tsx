@@ -39,9 +39,11 @@ export default function Home() {
           <Hero />
         </section>
 
-        <Header />
+        <div className="max-w-screen w-full my-20">
+          <Header />
+        </div>
 
-        <section id="projects" className="my-20">
+        <section id="projects" className="">
           <Featured />
         </section>
 

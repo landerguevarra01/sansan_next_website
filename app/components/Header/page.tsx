@@ -1,6 +1,7 @@
 // components/Header/page.tsx
 "use client";
 
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
@@ -42,9 +43,11 @@ export default function Header() {
   return (
     <header className="w-full py-4 flex justify-between items-center text-responsiveNav z-50">
       <div className="flex items-center">
-        <img
+        <Image
           src="/Assets/SANSAN.png"
           alt="SANSAN Logo"
+          width={400}
+          height={400}
           className="h-[82px] w-auto cursor-pointer"
           onClick={() => handleNavigation("home")}
         />

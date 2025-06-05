@@ -1,5 +1,6 @@
 "use client";
 import AmazonListingDescription from "@/app/components/AmazonListing/page";
+import LedVisuals from "@/app/components/LedVisuals/page";
 import React, { useState } from "react";
 
 export default function Featured() {
@@ -19,7 +20,7 @@ export default function Featured() {
     {
       id: "02",
       title: "LED VISUALS",
-      description: "Description for LED VISUALS",
+      description: <LedVisuals />,
     },
     // {
     //   id: "06",
