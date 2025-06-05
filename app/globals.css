@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1d1d1d;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -23,4 +23,127 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  max-width: screen;
+  overflow-x: hidden;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-block: 40px;
+}
+
+.divider2 {
+  width: 1207px;
+  height: 1px;
+  background-color: #ccc;
+  margin-block: 40px;
+}
+
+.marqueeSquare {
+  width: 331px;
+  height: 220px;
+  background-color: #d9d9d9;
+}
+
+#wave {
+  height: 40px;
+  width: 40px;
+  fill: #fff;
+}
+
+/* Apply pulse animation with delay to each line only when wave-playing class is active */
+.wave-playing #Line_1 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.15s;
+}
+
+.wave-playing #Line_2 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.3s;
+}
+
+.wave-playing #Line_3 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.45s;
+}
+
+.wave-playing #Line_4 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.6s;
+}
+
+.wave-playing #Line_5 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.75s;
+}
+
+.wave-playing #Line_6 {
+  animation: pulse 1s infinite;
+  animation-delay: 0.9s;
+}
+
+.wave-playing #Line_7 {
+  animation: pulse 1s infinite;
+  animation-delay: 1.05s;
+}
+
+.wave-playing #Line_8 {
+  animation: pulse 1s infinite;
+  animation-delay: 1.2s;
+}
+
+.wave-playing #Line_9 {
+  animation: pulse 1s infinite;
+  animation-delay: 1.35s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scaleY(1);
+    transform-origin: 50% 50%;
+  }
+
+  50% {
+    transform: scaleY(0.7);
+    transform-origin: 50% 50%;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: 50% 50%;
+  }
+}
+
+.scroll-hidden {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.marqueeSquare {
+  width: 40px;
+  height: 40px;
+  background-color: #db0102;
+  /* red color or whatever you want */
+  border-radius: 8px;
+}
+
+.scroll-hidden {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
 }
